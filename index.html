@@ -20,27 +20,31 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Sobre a loja</a>
+                        <a href="#about">Sobre a loja</a>
                     </li>
                     <li>
-                        <a href="#">Contato</a>
+                        <a href="#contact">Contato</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section>
+    <section id="about">
         <div class="container">
-            <img src="./imagens/guitarras.jpg" alt="fachada de uma clinica" class="store-front">
+            <img src="./imagens/guitarras.jpg" alt="varias guitarras" class="store-front">
             <div>
                 <h2>Sobre a loja</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro recusandae rerum officiis laborum, sit
-                    quos corporis facilis laboriosam dolorum assumenda nesciunt dicta eos quidem quae rem ullam
-                    pariatur,
-                    beatae expedita?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt asperiores veniam hic, dolore a
-                    numquam possimus velit consectetur minus quas debitis doloribus eos deleniti consequatur eligendi.
-                    Maxime ducimus omnis voluptate.</p>
+                <p>Bem-vindos à nossa loja de guitarras, o lugar onde o amor pelo rock é nossa nota principal! Aqui, a
+                    música é mais do que apenas notas e acordes, é uma paixão que nos move. Somos apaixonados por tudo
+                    que envolve o mundo do rock, desde os riffs icônicos até os amplificadores vibrantes. Nossa missão é
+                    fornecer a você, amante da guitarra, as melhores ferramentas para expressar sua alma roqueira.
+                    Entre, explore e deixe-se levar pelo som que alimenta nossas almas e inspira cada nota que ecoa em
+                    nossas paredes.</p>
+                <p>Na nossa loja, não se trata apenas de comprar uma guitarra, é sobre encontrar a sua voz e criar o
+                    próximo grande sucesso do rock. Nossos especialistas estão aqui para ajudar, seja você um iniciante
+                    empolgado ou um veterano da cena musical. E lembre-se, quando estivermos fechando a loja no final do
+                    dia, ainda estaremos tocando nossa guitarra, mantendo o espírito do rock vivo. Junte-se a nós nessa
+                    jornada musical e compartilhe o amor pelo rock em cada acorde!</p>
                 <ul class="brands-list">
                     <li><img src="./imagens/fender.png" alt=""></li>
                     <li><img src="./imagens/gibson.png" alt=""></li>
@@ -50,20 +54,50 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="contact">
         <div class="container">
             <h2>Contato</h2>
-            <div>
-                <div><h3>Fale conosco</h3></div>
-            </div>
-            <div>
-                <div><h3>Nos acompanhe</h3></div>
-            </div>
-            <div>
-                <div><h3>Venha ate nos</h3></div>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form action="">
+                        <input type="text" placeholder="Seu nome" required>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <input type="tel" placeholder="Seu telefone(Opcional)">
+                        <textarea placeholder="Deixe aqui seu feedback" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+                <div>
+                    <div>
+                        <h3>Nos acompanhe</h3>
+                        <ul class="social-links">
+                            <li><a href="" title="Siga-nos no instagram"><img src="./imagens/instagram.png"
+                                        alt="Logo do instagram"></a></li>
+                            <li><a href="" title="Siga-nos no facebook"><img src="./imagens/facebook.png"
+                                        alt="Logo do facebook"></a></li>
+                            <li><a href="" title="Siga-nos no youtube"><img src="./imagens/YouTube-Logo.png"
+                                        alt="logo do youtube"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Venha ate nos</h3>
+                        <address>Rua Só Nós Dois n°2 Recife, PE</address>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Patrik guitarras - Todos os direitos reservados - 2023
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
