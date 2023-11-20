@@ -57,7 +57,7 @@ header .container,
 }
 
 .store-front {
-    max-width: 300px;
+    max-width: 400px;
     margin-right: 32px;
     border-radius: 10%;
 }
@@ -136,15 +136,7 @@ form button {
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #e46612eb;
-    color: rgb(0, 0, 0);
 
-}
-
-header a:hover {
-    color: #ffffffde;
-}
 
 form textarea:focus,
 input:focus {
@@ -186,6 +178,10 @@ footer {
     width: 100%;
 }
 
+
+
+
+
 .produtos {
     display: grid;
     grid-template-columns: repeat(4, 24.25%);
@@ -217,6 +213,28 @@ ul {
     border-bottom: 2px solid #ff6803;
 }
 
+@media screen and (min-width:1024px) {
+    .produtos button:hover {
+        background-color: #000000;
+        color: #ff6803;
+    }
+
+    .produtos button:active {
+        background-color: #000000;
+        color: #ff6803;
+    }
+
+    form button:hover {
+        background-color: #e46612eb;
+        color: rgb(0, 0, 0);
+
+    }
+
+    header a:hover {
+        color: #ffffffde;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .produtos {
         display: grid;
@@ -239,23 +257,50 @@ ul {
 
     .store-front {
         max-width: 600px;
-        margin-right: 32px;
+        width: 100%;
         border-radius: 10%;
+    }
+
+    .produtos button:active {
+        background-color: #000000;
+        color: #ff6803;
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:762px) {
 
     .produtos,
     .contact-methods {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+    }
+
+    .produtos img {
+        max-width: 650px;
+        width: 100%;
     }
 
     .store-front {
-        max-width: 300px;
+        max-width: 600px;
+        width: 100%;
+        margin: 0;
     }
-    .produtos button{
+
+    .produtos button {
         margin-bottom: 30px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header a {
+        font-size: 15px;
+    }
+
+    .produtos button:active {
+        background-color: #000000;
+        color: #ff6803;
     }
 }
